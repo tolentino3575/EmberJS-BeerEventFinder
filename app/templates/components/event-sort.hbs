@@ -1,0 +1,5 @@
+<ul>
+  {{#each sortedEvents as |event|}}
+    {{#link-to 'event' event.id}}{{event-tile event=event}}{{/link-to}}
+  {{/each}}
+</ul>

@@ -7,11 +7,9 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('about');
-<<<<<<< HEAD
+  this.route('event', {path: '/event/:event_id'});
   this.route('admin');
-=======
   this.route('newevent');
->>>>>>> master
 });
 
 export default Router;
