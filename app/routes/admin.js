@@ -20,11 +20,10 @@ export default Ember.Route.extend({
     editEvent(event, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key] !== undefined) {
-          event.set(key, params);
+          event.set(key, params[key]);
         }
       });
       event.save();
-      this.transitionTo('admin');
     },
 
     destroyEvent(event) {

@@ -1,1 +1,11 @@
 <h1>Admin Page</h1>
+  <br>
+  <br>
+  <br>
+<h2>All Events:</h2>
+  {{#each model as |event|}}
+    <div class="adminEventDisplay">
+      {{admin-event-tile event=event editEvent="editEvent"}}
+      <button {{action "destroyEvent" event}} class="btn">Delete</button>
+    </div>
+  {{/each}}
