@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('event', {path: '/event/:event_id'});
   this.route('admin');
   this.route('newevent');
+  this.route('bookmarkedevents');
 });
 
 export default Router;

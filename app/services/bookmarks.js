@@ -1,12 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
-  bookmarks: [],
+  bookmarkList: [],
 
   add(event) {
-    this.get('bookmarks').pushObject(event);
+    var list = this.get('bookmarkList');
+    this.get('bookmarkList').pushObject(event);
   },
   remove(event) {
-    this.get('bookmarks').removeObject(event);
+    this.get('bookmarksList').removeObject(event);
   },
 });
