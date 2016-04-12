@@ -1,0 +1,20 @@
+{ "events": [{
+    "name": "Beer Fun Day",
+    "date": "04/15/2016",
+    "location": "400 SW 6th",
+    "description": "Come have fun and drink beer",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVUaZsfBnuKlunv9p-8bReRBzD_xsW8r7FVO1AOH569tcqfLUE"
+  }, {
+    "name": "Super Fun Beer Event",
+    "date": "04/16/2016",
+    "location": "500 NW 7th",
+    "description": "It will be super fun!",
+    "image": "https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678063-beer-128.png"
+  }, {
+    "name": "Beer Day",
+    "date": "04/17/2016",
+    "location": "600 SE 8th",
+    "description": "Drink beer",
+    "image": "http://www.castlemalting.com/Publications/Recipes/Images/BelgianAmberBeer.png"
+  }]
+}
