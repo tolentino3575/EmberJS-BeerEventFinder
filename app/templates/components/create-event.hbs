@@ -1,0 +1,35 @@
+<div>
+  <form>
+    <div class="form-group">
+      <label for="name">Name: </label>
+      {{input value=name id="name"}}
+    </div>
+
+    <div class="form-group">
+      <label for="date">Event Date: </label>
+      {{input type=date value=date id="date"}}
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address: </label>
+      {{input value=address id="address"}}
+    </div>
+
+    <div class="form-group">
+      <label for="zip">Zip Code: </label>
+      {{input value=zip id="zip"}}
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description</label>
+      {{input value=description id="description"}}
+    </div>
+
+    <div class="form-group">
+      <label for="name">Image</label>
+      {{input value=name id="image"}}
+    </div>
+
+    <button {{action 'saveNewEvent'}}>Save</button>
+  </form>
+</div>
