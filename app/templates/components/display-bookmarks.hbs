@@ -1,0 +1,5 @@
+<ul>
+  {{#each bookmarks.bookmarkList as |event|}}
+    <li>{{#link-to 'event' event.id}}{{event.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
