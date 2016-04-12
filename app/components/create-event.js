@@ -6,11 +6,11 @@ export default Ember.Component.extend({
       var params = {
       name: this.get('name'),
       date: this.get('date'),
-      location: this.get('location'),
+      address: this.get('address'),
       description: this.get('description'),
       image: this.get('image')
-      };
-      this.sendAction('saveNewEvent', params);
+    };
+    this.sendAction('saveEvent', params);
     }
   }
 });
