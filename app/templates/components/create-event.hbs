@@ -1,3 +1,4 @@
+
 <div>
   <form>
     <div class="form-group">
@@ -7,12 +8,12 @@
 
     <div class="form-group">
       <label for="date">Event Date: </label>
-      {{input type=date value=date id="date"}}
+      {{input type="date" value=date id="date"}}
     </div>
 
     <div class="form-group">
-      <label for="location">Location: </label>
-      {{input value=location id="location"}}
+      <label for="address">Address: </label>
+      {{input value=address id="address"}}
     </div>
 
     <div class="form-group">
@@ -21,10 +22,10 @@
     </div>
 
     <div class="form-group">
-      <label for="name">Image</label>
-      {{input value=name id="image"}}
+      <label for="image">Image</label>
+      {{input value=image id="image"}}
     </div>
 
-    <button {{action 'saveNewEvent'}}>Save</button>
+    <button class="btn btn-primary" {{action 'saveEvent'}}>Save</button>
   </form>
 </div>
