@@ -1,3 +1,21 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="jumbotron text-center">
+  <div class="nav text-right">
+    <h6 class="navLinks">{{#link-to 'about'}}About{{/link-to}}</h6>
+    <h6 class="navLinks">|</h6>
+    <h6 class="navLinks">{{#link-to 'index'}}Home{{/link-to}}</h6>
+  </div>
 
-{{outlet}}
+  <h1>Beer Event Finder</h1>
+    <br>
+    <br>
+  <p>A place to find places to drink new beers</p>
+</div>
+
+<div class="container text-center">
+  {{outlet}}
+</div>
+  <br>
+  <br>
+<div class="footer text-center">
+  <p>Copyright &copy; 2016 | Jared Beckler, Yvonna Contreras, Erik Tolentino & Jess Guilford | Epicodus | Portland, OR</p>
+</div>

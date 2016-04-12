@@ -1,0 +1,13 @@
+.aboutPhotos {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.navLinks {
+  padding-bottom: 3em;
+  margin-top: -2em;
+  float: right;
+  padding-right: 1em;
+  font-weight: bold;
+}
