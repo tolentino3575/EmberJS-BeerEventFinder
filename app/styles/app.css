@@ -4,6 +4,11 @@
   border-radius: 50%;
 }
 
+.adminImageDisplay {
+  height: 200px;
+  width: 200px;
+}
+
 .navLinks {
   padding-bottom: 3em;
   margin-top: -2em;
