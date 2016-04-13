@@ -1,0 +1,19 @@
+{{#ember-remodal
+  openButton='Add Comment'
+  confirmButton='Save'
+  title='Add Comment'
+  buttonClasses='btn'
+  onClose=(action 'saveComment')
+}}
+  <form>
+    <div class="form-group">
+      <label for="author">Name: </label>
+      {{input value=author}}
+    </div>
+
+    <div class="form-group">
+      <label for="body">Comment: </label>
+      {{textarea rows="10" cols="50" value=body}}
+    </div>
+  </form>
+{{/ember-remodal}}
