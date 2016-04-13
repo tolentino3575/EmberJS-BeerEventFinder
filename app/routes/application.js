@@ -5,5 +5,11 @@ export default Ember.Route.extend({
     this.get('session').fetch().catch((error) => {
       console.log(error);
     });
+  },
+  actions: {
+    accessDenied(){
+      this.transitionTo('/');
+      alert('ACCESS DENIED, PLEASE SIGN-IN TO SEE THIS PAGE');
+    }
   }
 });
