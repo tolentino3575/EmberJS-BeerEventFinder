@@ -2,5 +2,6 @@
 {{#each bookmarks.bookmarkList as |event|}}
   <ul>
     {{#link-to 'event' event.id}}{{event.name}}: {{format-date event}}{{/link-to}}
+    <button {{action 'removeFromBookmarks' event}}>Remove from Bookmarks</button>
   </ul>
 {{/each}}
