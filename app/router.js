@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('admin');
   this.route('newevent');
   this.route('bookmarkedevents');
+  this.route('all-events');
 });
 
 export default Router;
