@@ -14,6 +14,7 @@ export default Ember.Controller.extend({
         } else {
           controller.set('email', null);
           controller.set('password', null);
+          alert('Successfully Signed-Up, Sign-In to start session!');
         };
       });
     },
@@ -27,6 +28,7 @@ export default Ember.Controller.extend({
       }).then(() => {
         controller.set('signInEmail', null);
         controller.set('signInPassword', null);
+        controller.transitionToRoute('home');
       }, (error) => {
         console.log(error);
       });

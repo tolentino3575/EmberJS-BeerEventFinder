@@ -8,7 +8,8 @@ export default Ember.Component.extend({
       date: this.get('date'),
       address: this.get('address'),
       description: this.get('description'),
-      image: this.get('image')
+      image: this.get('image'),
+      author: this.get('author'),
     };
     this.sendAction('saveEvent', params);
     }
