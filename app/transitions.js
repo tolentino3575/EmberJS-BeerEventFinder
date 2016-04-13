@@ -19,13 +19,7 @@ export default function(){
   ),
   this.transition(
     this.fromRoute('about'),
-    this.toRoute('bookmarkedevent'),
-    this.use('toRight'),
-    this.reverse('toLeft')
-  ),
-  this.transition(
-    this.fromRoute('all-events'),
-    this.toRoute('bookmarkedevent'),
+    this.toRoute('boookmarkedevent'),
     this.use('toRight'),
     this.reverse('toLeft')
   );
