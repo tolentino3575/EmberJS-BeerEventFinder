@@ -6,5 +6,10 @@ export default DS.Model.extend({
   address: DS.attr(),
   description: DS.attr(),
   image: DS.attr(),
-  comments: DS.hasMany('comment', {async: true})
+  comments: DS.hasMany('comment', {async: true}),
+
+  bookmarks: Ember.inject.service(),
+  inBookmarks: Ember.computed('bookmarks.bookmarkList.[]', function(){
+    return this.get('bookmarks').includes(this);
+  })
 });

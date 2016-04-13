@@ -6,8 +6,12 @@ export default Ember.Service.extend({
   add(event) {
     this.get('bookmarkList').pushObject(event);
   },
-  
+
   remove(event) {
     this.get('bookmarkList').removeObject(event);
   },
+
+  includes(event){
+    return this.get('bookmarkList').includes(event);
+  }
 });
