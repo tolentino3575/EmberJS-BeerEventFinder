@@ -12,6 +12,8 @@ Router.map(function() {
   this.route('newevent');
   this.route('bookmarkedevents');
   this.route('all-events');
+  this.route('home');
+  this.route('sign-up');
 });
 
 export default Router;
