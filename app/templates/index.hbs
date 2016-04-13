@@ -3,8 +3,8 @@
     <div class='page-header'>
         <h1>SIGN UP</h1>
     </div>
-    {{input type='text' class='form-control' value=username placeholder='username'}}
-    {{input type='password' class='form-control' value=password placeholder='password'}}
+    {{input type='text' class='form-control' value=email placeholder='email'}}
+    {{input type='password' class='form-control' value=password placeholder='password'}}<br>
     <button class='btn btn-default' {{action 'signUp'}}>
         {{fa-icon 'user-plus'}} Sign Up
     </button>
@@ -13,10 +13,10 @@
 
   <div class="col-md-6">
     <div class='page-header'>
-        <h1>Sign In</h1>
+        <h1>SIGN IN</h1>
     </div>
-    {{input type='text' class='form-control' value=signInUsername placeholder='username'}}
-    {{input type='password' class='form-control' value=signInPassword placeholder='password'}}
+    {{input type='text' class='form-control' value=signInEmail placeholder='email'}}
+    {{input type='password' class='form-control' value=signInPassword placeholder='password'}}<br>
     {{#if session.isWorking}}
     <button class='btn btn-default' disabled='disabled'>
         {{fa-icon 'spinner' spin=true}} Signing in...

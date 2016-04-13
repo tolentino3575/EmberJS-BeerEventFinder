@@ -7,7 +7,7 @@ export default DS.Model.extend({
   description: DS.attr(),
   image: DS.attr(),
   comments: DS.hasMany('comment', {async: true}),
-  // author: DS.belongsTo('session.', {async: true}),
+  // author: DS.belongsTo('session.currentUser.email', {async: true}),
 
   bookmarks: Ember.inject.service(),
   inBookmarks: Ember.computed('bookmarks.bookmarkList.[]', function(){

@@ -6,13 +6,13 @@ export default Ember.Controller.extend({
     signUp() {
       let controller = this;
       this.get('firebase').createUser({
-        username: this.get('username') || '',
+        email: this.get('email') || '',
         password: this.get('password') || '',
       }, (error, data) => {
         if (error) {
           console.log(error);
         } else {
-          controller.set('username', null);
+          controller.set('email', null);
           controller.set('password', null);
           alert('Successfully Signed-Up, Sign-In to start session!');
         };
@@ -23,10 +23,10 @@ export default Ember.Controller.extend({
       let controller = this;
       this.get('session').open('firebase', {
         provider: provider,
-        username: this.get('signInUsername') || '',
+        email: this.get('signInEmail') || '',
         password: this.get('signInPassword') || '',
       }).then(() => {
-        controller.set('signInUsername', null);
+        controller.set('signInEmail', null);
         controller.set('signInPassword', null);
         controller.transitionToRoute('home');
       }, (error) => {
