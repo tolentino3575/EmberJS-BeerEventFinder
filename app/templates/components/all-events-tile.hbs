@@ -1,5 +1,5 @@
 
-{{#each event as |event|}}
+{{#each sortedEvents as |event|}}
   <ul>
     {{#link-to 'event' event.id}}{{event.name}}: {{format-date event}}{{/link-to}}
   </ul>
