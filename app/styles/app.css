@@ -16,3 +16,18 @@
   padding-right: 1em;
   font-weight: bold;
 }
+
+
+.page-footer {
+  position: fixed;
+  text-align: center;
+  font-weight: 200;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+}
+
+body {
+  font-family: 'Roboto Mono';
+}
