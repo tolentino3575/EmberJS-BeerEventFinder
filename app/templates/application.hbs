@@ -1,17 +1,17 @@
 <div class="jumbotron text-center">
-  <div class="nav text-right">
-    <h6 class="navLinks">{{#link-to 'admin'}}Admin{{/link-to}}</h6>
-    <h6 class="navLinks">|</h6>
-    <h6 class="navLinks">{{#link-to 'index'}}Home{{/link-to}}</h6>
-    <h6 class="navLinks">|</h6>
-    <h6 class="navLinks">{{#link-to 'about'}}About{{/link-to}}</h6>
-    <h6 class="navLinks">|</h6>
-    <h6 class="navLinks">{{#link-to 'newevent'}}New Event{{/link-to}}</h6>
-    <h6 class="navLinks">|</h6>
-    <h6 class="navLinks">{{#link-to 'bookmarkedevents'}}Bookmarks{{/link-to}}</h6>
-    <h6 class="navLinks">|</h6>
-    <h6 class="navLinks">{{#link-to 'all-events'}}All Events{{/link-to}}</h6>
-  </div>
+  <ul class="nav nav-pills">
+    <li role="presentation">{{#link-to 'index'}}Home{{/link-to}}</li>
+
+    <li role="presentation">{{#link-to 'newevent'}}New Event{{/link-to}}</li>
+
+    <li role="presentation">{{#link-to 'admin'}}Admin{{/link-to}}</li>
+
+    <li role="presentation">{{#link-to 'about'}}About{{/link-to}}</li>
+
+    <li role="presentation">{{#link-to 'bookmarkedevents'}}Bookmarks{{/link-to}}</li>
+
+    <li role="presentation">{{#link-to 'all-events'}}All Events{{/link-to}}</li>
+  </ul>
 
   <h1>Beer Event Finder</h1>
     <br>
@@ -20,7 +20,7 @@
 </div>
 
 <div class="container text-center">
-  {{outlet}}
+  {{liquid-outlet}}
 </div>
   <br>
   <br>

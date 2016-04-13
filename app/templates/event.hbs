@@ -1,1 +1,9 @@
 {{event-detail event=model}}
+
+{{new-comment event=model comment=comment saveComment="saveComment"}}
+
+<div>
+  {{#each model.comments as |comment|}}
+    {{comment-display comment=comment}}
+  {{/each}}
+</div>
