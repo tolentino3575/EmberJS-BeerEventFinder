@@ -1,5 +1,5 @@
-<h4>Your Bookmarked Events!</h4>
-{{#each bookmarks.bookmarkList as |event|}}
+
+{{#each event as |event|}}
   <ul>
     {{#link-to 'event' event.id}}{{event.name}}: {{format-date event}}{{/link-to}}
   </ul>
