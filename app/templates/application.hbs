@@ -1,6 +1,6 @@
 <div class="jumbotron text-center">
   <ul class="breadcrumb">
-    <li role="presentation">{{#link-to 'index'}}Home{{/link-to}}</li>
+    <li role="presentation">{{#link-to 'home'}}Home{{/link-to}}</li>
 
     <li role="presentation">{{#link-to 'newevent'}}New Event{{/link-to}}</li>
 
@@ -11,12 +11,22 @@
     <li role="presentation">{{#link-to 'bookmarkedevents'}}Bookmarks{{/link-to}}</li>
 
     <li role="presentation">{{#link-to 'all-events'}}All Events{{/link-to}}</li>
+
+    {{#if session.isAuthenticated}}
+    <li class="signOutBtn" role="presentation" {{action 'signOut'}}>Sign Out</li>
+    {{/if}}
   </ul>
 
   <h1>Beer Event Finder</h1>
     <br>
     <br>
   <p>A place to find places to drink new beers</p>
+
+  {{#if session.isAuthenticated}}
+  <div class='panel panel-default'>
+    <div class='panel-heading'>Welcome, {{session.currentUser.email}}</div>
+  </div>
+  {{/if}}
 </div>
 
 <div class="container text-center">
