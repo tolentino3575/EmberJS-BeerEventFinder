@@ -6,8 +6,50 @@ export default function(){
     this.reverse('toLeft')
   ),
   this.transition(
+    this.fromRoute('index'),
+    this.toRoute('admin'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('index'),
+    this.toRoute('about'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('index'),
+    this.toRoute('bookmarkedevents'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('index'),
+    this.toRoute('all-events'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
     this.fromRoute('newevent'),
     this.toRoute('admin'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('newevent'),
+    this.toRoute('about'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('newevent'),
+    this.toRoute('bookmarkedevents'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('newevent'),
+    this.toRoute('all-events'),
     this.use('toRight'),
     this.reverse('toLeft')
   ),
@@ -18,14 +60,32 @@ export default function(){
     this.reverse('toLeft')
   ),
   this.transition(
-    this.fromRoute('about'),
-    this.toRoute('bookmarkedevent'),
+    this.fromRoute('admin'),
+    this.toRoute('bookmarkedevents'),
     this.use('toRight'),
     this.reverse('toLeft')
   ),
   this.transition(
-    this.fromRoute('all-events'),
-    this.toRoute('bookmarkedevent'),
+    this.fromRoute('admin'),
+    this.toRoute('all-events'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('about'),
+    this.toRoute('bookmarkedevents'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('about'),
+    this.toRoute('all-events'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('bookmarkedevents'),
+    this.toRoute('all-events'),
     this.use('toRight'),
     this.reverse('toLeft')
   );
