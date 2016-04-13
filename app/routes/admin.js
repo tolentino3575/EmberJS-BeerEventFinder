@@ -27,8 +27,10 @@ export default Ember.Route.extend({
     },
 
     destroyEvent(event) {
+      if(confirm("DESTROY?")){
       event.destroyRecord();
       this.transitionTo('admin');
+    };
     }
   }
 });
