@@ -2,6 +2,8 @@
 
 {{new-comment event=model comment=comment saveComment="saveComment"}}
 
-{{#each model.comments as |comment|}}
-  {{comment-display comment=comment}}
-{{/each}}
+<div>
+  {{#each model.comments as |comment|}}
+    {{comment-display comment=comment}}
+  {{/each}}
+</div>
