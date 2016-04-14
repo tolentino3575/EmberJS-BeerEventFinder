@@ -22,6 +22,12 @@ ul {
   padding-left: 0;
 }
 
+.navRoutes {
+  position: center;
+  display: inline;
+  color: white;
+}
+
 a {
   text-decoration: none;
   color: $primary-color;
@@ -55,6 +61,11 @@ table {
   font-weight: bold;
 }
 
+.jumbotron {
+  background-image: url('/assets/img/flight.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .breadcrumb{
   background-color: inherit;
