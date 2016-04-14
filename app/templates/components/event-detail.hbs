@@ -4,5 +4,6 @@
 {{#if event.inBookmarks}}
   <h1>ALREADY BOOKMARKED</h1>
 {{else}}
+<img class="aboutPhotos" src={{event.image}}><br>
 <button {{action 'saveToBookmarks' event}}>Bookmark Event</button>
 {{/if}}
