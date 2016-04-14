@@ -27,6 +27,12 @@ export default Ember.Component.extend({
   willRemoveElement() {
  		$(window).off('scroll', this._windowScroll);
   	this._super(...arguments);
+  },
+  actions: {
+    signOut() {
+      this.get('session').close();
+      this.transitionToRoute('/');
+    }
   }
 
 });
