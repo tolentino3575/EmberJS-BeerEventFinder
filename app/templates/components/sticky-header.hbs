@@ -1,0 +1,15 @@
+<ul class="breadcrumb navigation">
+  <li role="presentation">{{#link-to 'home'}}Home{{/link-to}}</li>
+
+  <li role="presentation">{{#link-to 'newevent'}}New Event{{/link-to}}</li>
+
+  <li role="presentation">{{#link-to 'bookmarkedevents'}}Bookmarks{{/link-to}}</li>
+
+  <li role="presentation">{{#link-to 'all-events'}}All Events{{/link-to}}</li>
+
+  {{#if session.isAuthenticated}}
+    <li class="signOutBtn" role="presentation" {{action 'signOut'}}>Sign Out</li>
+    {{else}}
+        <li role="presentation">{{#link-to 'index'}}Sign In{{/link-to}}</li>
+  {{/if}}
+</ul>

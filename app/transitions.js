@@ -118,5 +118,35 @@ export default function(){
     this.toRoute('admin'),
     this.use('toRight'),
     this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('home'),
+    this.toRoute('event'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('bookmarkedevents'),
+    this.toRoute('event'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('all-events'),
+    this.toRoute('event'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('index'),
+    this.toRoute('home'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('bookmarkedevents'),
+    this.toRoute('index'),
+    this.use('toRight'),
+    this.reverse('toLeft')
   );
 }
