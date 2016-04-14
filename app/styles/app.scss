@@ -53,12 +53,32 @@ button {
 }
 
 // Layout & Containers
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
 .map-display {
     height: 600px;
     width: 100%;
   }
 
 // Navbar
+
+.navigation {
+  background-color: #eee;
+}
+
+.is-sticky {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+}
+
 .navLinks {
   padding-bottom: 3em;
   margin-top: -2em;
@@ -69,7 +89,7 @@ button {
 
 
 .breadcrumb{
-  background-color: inherit;
+  background-color: #eee;
 }
 
 .signOutBtn {
@@ -83,7 +103,7 @@ button {
 
 // Footer
 .page-footer {
-  position: fixed;
+  //position: fixed;
   text-align: center;
   font-weight: 200;
   left:0px;
