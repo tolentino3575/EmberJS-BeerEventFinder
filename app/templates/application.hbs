@@ -4,21 +4,18 @@
 
     <li role="presentation">{{#link-to 'newevent'}}New Event{{/link-to}}</li>
 
-    <li role="presentation">{{#link-to 'admin'}}Admin{{/link-to}}</li>
-
-    <li role="presentation">{{#link-to 'about'}}About{{/link-to}}</li>
-
     <li role="presentation">{{#link-to 'bookmarkedevents'}}Bookmarks{{/link-to}}</li>
 
     <li role="presentation">{{#link-to 'all-events'}}All Events{{/link-to}}</li>
 
     {{#if session.isAuthenticated}}
-    <li class="signOutBtn" role="presentation" {{action 'signOut'}}>Sign Out</li>
+      <li class="signOutBtn" role="presentation" {{action 'signOut'}}>Sign Out</li>
     {{/if}}
   </ul>
 
   <img src="assets/img/growler-text2.svg" class="logo-main">
   <!-- <h1>Beer Event Finder</h1> -->
+
     <br>
     <br>
   <p>A place to find places to drink new beers at these new places with your new beers</p>
@@ -36,5 +33,6 @@
   <br>
   <br>
 <div class="page-footer text-center">
-  <p>Copyright &copy; 2016 | Jared Beckler, Yvonna Contreras, Erik Tolentino & Jess Guilford | Epicodus | Portland, OR</p>
+  <p>Copyright &copy; 2016 | {{#link-to 'admin'}}Admin{{/link-to}} | {{#link-to 'about'}}About{{/link-to}} | Portland, OR</p>
+
 </div>
