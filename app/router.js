@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('about');
-  this.authenticatedRoute('event', {path: '/event/:event_id'});
+  this.route('event', {path: '/event/:event_id'});
   this.route('admin');
   this.authenticatedRoute('newevent');
   this.authenticatedRoute('bookmarkedevents');
