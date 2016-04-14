@@ -30,7 +30,7 @@ export default Ember.Route.extend({
       if(confirm("DESTROY?")){
       event.destroyRecord();
       this.transitionTo('admin');
-    };
+    }
     }
   }
 });

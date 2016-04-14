@@ -13,7 +13,7 @@ export default Ember.Component.extend({
     showMap() {
       var container = this.$('.map-display')[0];
       var options = {
-        center: {lat: -34.397, lng: 150.644},
+        center: {lat: 45.5231, lng: -122.6765},
         zoom: 15
       };
       this.get('map').findMap(container, options);
