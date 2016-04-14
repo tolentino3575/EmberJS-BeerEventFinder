@@ -1,9 +1,12 @@
 <h1>{{event.name}}</h1>
 <h2>{{format-date event}}</h2>
 <p>{{event.description}}</p>
-{{#if event.inBookmarks}}
-  <h1>ALREADY BOOKMARKED</h1>
+{{#if session.isAuthenticated}}
+  {{#if event.inBookmarks}}
+    <h1>Bookmarked</h1>
+  {{else}}
+    <button {{action 'saveToBookmarks' event}}>Bookmark Event</button>
+  {{/if}}
 {{else}}
-<img class="aboutPhotos" src={{event.image}}><br>
-<button {{action 'saveToBookmarks' event}}>Bookmark Event</button>
+  <img class="aboutPhotos" src={{event.image}}><br>
 {{/if}}

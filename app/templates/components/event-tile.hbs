@@ -1,9 +1,11 @@
-<div class="item-header"><h1>{{event.name}}</h1>
+<div class="item-header">
+  <h1 class="header-title">{{event.name}}</h1>
+  <h1 class="hover-view">View Event</h1>
 </div>
 <table>
   <tbody>
     <tr>
-      <td class="item-date"><h2>{{format-date event}}</h2></td>
+      <td class="item-date">{{format-date event}}</td>
       <td class="item-info">
         <p>{{event.description}}</p>
         <p>{{event.author}}</p>

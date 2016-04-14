@@ -10,6 +10,8 @@
 
     {{#if session.isAuthenticated}}
       <li class="signOutBtn" role="presentation" {{action 'signOut'}}>Sign Out</li>
+      {{else}}
+          <li role="presentation">{{#link-to 'index'}}Sign In{{/link-to}}</li>
     {{/if}}
   </ul>
 
