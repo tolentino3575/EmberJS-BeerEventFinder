@@ -1,3 +1,5 @@
+@import 'materialize';
+@import 'ember-cli-materialize';
 // Variables
 $primary-color: #191919;
 $bronze: #594d46;
@@ -128,6 +130,9 @@ li:hover .hover-view {
 
 li:hover .header-title {
   display: none;
+
+.eventDescription{
+  height: 100px;
 }
 
 .events-list li {
