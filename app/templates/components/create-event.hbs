@@ -18,7 +18,7 @@
 
     <div class="form-group">
       <label for="description">Description: </label>
-      {{textarea rows="5" columns="50" value=description id="description"}}
+      {{textarea class="eventDescription" value=description id="description"}}
     </div>
 
     <div class="form-group">
@@ -26,6 +26,7 @@
       {{input value=image id="image"}}
     </div>
 
-    <button class="btn btn-primary" {{action 'saveEvent'}}>Save</button>
+    <button class="btn waves-effect waves-light" name="action" type="submit" {{action 'saveEvent'}}>Save</button>
+
   </form>
 </div>

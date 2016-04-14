@@ -1,7 +1,10 @@
+@import 'materialize';
+@import 'ember-cli-materialize';
 // Variables
 $primary-color: #191919;
 $bronze: #594d46;
 
+$small-breakpoint: 660px;
 $medium-breakpoint: 720px;
 
 // Mixins
@@ -38,13 +41,46 @@ table {
   }
 }
 
+button {
+  padding: 6px 12px;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
 // Layout & Containers
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
 .map-display {
     height: 600px;
     width: 100%;
   }
 
 // Navbar
+
+.navigation {
+  background-color: #eee;
+}
+
+.is-sticky {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+}
+
 .navLinks {
   padding-bottom: 3em;
   margin-top: -2em;
@@ -55,7 +91,7 @@ table {
 
 
 .breadcrumb{
-  background-color: inherit;
+  background-color: #eee;
 }
 
 .signOutBtn {
@@ -69,7 +105,7 @@ table {
 
 // Footer
 .page-footer {
-  position: fixed;
+  //position: fixed;
   text-align: center;
   font-weight: 200;
   left:0px;
@@ -86,13 +122,28 @@ table {
 
 }
 
+.hover-view {
+  display: none;
+}
+
+li:hover .hover-view {
+  display: inline-block;
+}
+
+li:hover .header-title {
+  display: none;
+
+.eventDescription{
+  height: 100px;
+}
+
 .events-list li {
   margin: 20px 0;
   @include item-border;
   .item-header {
     text-transform: capitalize;
     text-align: center;
-    border-bottom: 2px solid $primary-color;
+    border-bottom: 3px solid $primary-color;
     h1 {
       margin: 5px 0;
       padding: 3px;
@@ -105,9 +156,41 @@ table {
     margin: 0;
     padding: 5px;
     border-right: 1px solid $primary-color;
+    position: relative;
     @media screen and (min-width: $medium-breakpoint) {
-      width: 30%;
+      width: 20%;
       padding: 5px;
+    }
+    .month, .year {
+      font-size: 1.4em;
+      letter-spacing: 3px;
+      -webkit-transform:scale(1,1.1); /* Safari and Chrome */
+      -moz-transform:scale(1,1.1); /* Firefox */
+      -ms-transform:scale(1,1.1); /* IE 9 */
+      -o-transform:scale(1,1.1); /* Opera */
+      @media screen and (min-width: $medium-breakpoint) {
+        font-size: 1.8em;
+      }
+    }
+    .day {
+      font-size: 3em;
+      font-weight: 700;
+      letter-spacing: -4px;
+      @media screen and (min-width: $medium-breakpoint) {
+        font-size: 3.5em;
+      }
+    }
+    .year {
+      @media screen and (min-width: $small-breakpoint) {
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        position: absolute;
+        left: -10px;
+        top: 35px;
+      }
     }
   }
   .item-info {
@@ -116,8 +199,8 @@ table {
     width: 60%;
     text-align: left;
     @media screen and (min-width: $medium-breakpoint) {
-      width: 70%;
-      padding: 5px;
+      width: 80%;
+      padding: 10px;
     }
   }
 }

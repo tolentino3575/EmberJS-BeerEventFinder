@@ -1,38 +1,28 @@
-<div class="jumbotron text-center">
-  <ul class="breadcrumb">
-    <li role="presentation">{{#link-to 'home'}}Home{{/link-to}}</li>
+<div class="wrapper">
+  <div class="jumbotron text-center">
+    {{sticky-header session=session}}
 
-    <li role="presentation">{{#link-to 'newevent'}}New Event{{/link-to}}</li>
+    <img src="assets/img/growler-text2.svg" class="logo-main">
+    <!-- <h1>Beer Event Finder</h1> -->
 
-    <li role="presentation">{{#link-to 'bookmarkedevents'}}Bookmarks{{/link-to}}</li>
-
-    <li role="presentation">{{#link-to 'all-events'}}All Events{{/link-to}}</li>
+      <br>
+      <br>
+    <p>A place to find places to drink new beers at these new places with your new beers</p>
 
     {{#if session.isAuthenticated}}
-      <li class="signOutBtn" role="presentation" {{action 'signOut'}}>Sign Out</li>
+    <div class='panel panel-default'>
+      <div class='panel-heading'>Welcome, {{session.currentUser.email}}</div>
+    </div>
     {{/if}}
-  </ul>
-
-  <img src="assets/img/growler-text2.svg" class="logo-main">
-  <!-- <h1>Beer Event Finder</h1> -->
-
-    <br>
-    <br>
-  <p>A place to find places to drink new beers at these new places with your new beers</p>
-
-  {{#if session.isAuthenticated}}
-  <div class='panel panel-default'>
-    <div class='panel-heading'>Welcome, {{session.currentUser.email}}</div>
   </div>
-  {{/if}}
-</div>
 
-<div class="container text-center">
-  {{liquid-outlet}}
-</div>
-  <br>
-  <br>
-<div class="page-footer text-center">
-  <p>Copyright &copy; 2016 | {{#link-to 'admin'}}Admin{{/link-to}} | {{#link-to 'about'}}About{{/link-to}} | Portland, OR</p>
+  <div class="container text-center">
+    {{liquid-outlet}}
+  </div>
+    <br>
+    <br>
+  <div class="page-footer text-center">
+    <p>Copyright &copy; 2016 | {{#link-to 'admin'}}Admin{{/link-to}} | {{#link-to 'about'}}About{{/link-to}} | Portland, OR</p>
 
+  </div>
 </div>
