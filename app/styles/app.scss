@@ -86,6 +86,10 @@ table {
 
 }
 
+.eventDescription{
+  height: 100px;
+}
+
 .events-list li {
   margin: 20px 0;
   @include item-border;
