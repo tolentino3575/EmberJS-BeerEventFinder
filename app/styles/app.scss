@@ -1,5 +1,5 @@
-@import 'materialize';
 @import 'ember-cli-materialize';
+@import 'materialize';
 // Variables
 $primary-color: #191919;
 $bronze: #594d46;
@@ -129,25 +129,6 @@ button {
 
 // Event items
 
-.events-list {
-
-}
-
-.hover-view {
-  display: none;
-}
-
-li:hover .hover-view {
-  display: inline-block;
-}
-
-li:hover .header-title {
-  display: none;
-
-.eventDescription{
-  height: 100px;
-}
-
 .events-list li {
   margin: 20px 0;
   @include item-border;
@@ -214,6 +195,22 @@ li:hover .header-title {
       padding: 10px;
     }
   }
+}
+
+.hover-view {
+  display: none;
+}
+
+li:hover .hover-view {
+  display: inline-block;
+}
+
+li:hover .header-title {
+  display: none;
+}
+
+.eventDescription{
+  height: 100px;
 }
 
 // Page specific styles
