@@ -148,5 +148,17 @@ export default function(){
     this.toRoute('index'),
     this.use('toRight'),
     this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('event'),
+    this.toRoute('index'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('event'),
+    this.toRoute('about'),
+    this.use('toRight'),
+    this.reverse('toLeft')
   );
 }
