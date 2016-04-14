@@ -39,6 +39,10 @@ table {
 }
 
 // Layout & Containers
+.map-display {
+    height: 600px;
+    width: 100%;
+  }
 
 // Navbar
 .navLinks {
@@ -79,7 +83,7 @@ table {
     text-align: center;
     border-bottom: 2px solid $primary-color;
     h1 {
-      margin: 5px;
+      margin: 5px 0;
       padding: 3px;
     }
   }
