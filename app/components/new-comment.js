@@ -9,9 +9,13 @@ export default Ember.Component.extend({
         body: this.get('body'),
         event: this.get('event')
       };
-      this.sendAction('saveComment', params);
-      this.set('author', '');
-      this.set('body', '');
+      if((params.author === undefined) || (params.body === undefined)) {
+        alert("Please fill out all the fields!");
+      } else {
+        this.sendAction('saveComment', params);
+        this.set('author', '');
+        this.set('body', '');
+      }
     }
   }
 });
