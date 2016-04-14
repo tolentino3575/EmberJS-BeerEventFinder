@@ -39,6 +39,10 @@ table {
 }
 
 // Layout & Containers
+.map-display {
+    height: 600px;
+    width: 100%;
+  }
 
 // Navbar
 .navLinks {
@@ -49,9 +53,15 @@ table {
   font-weight: bold;
 }
 
+
 .breadcrumb{
   background-color: inherit;
 }
+
+.signOutBtn {
+  cursor: pointer;
+}
+
 // Header and Hero styling
 .logo-main {
   width: 200px;
@@ -82,7 +92,7 @@ table {
     text-align: center;
     border-bottom: 2px solid $primary-color;
     h1 {
-      margin: 5px;
+      margin: 5px 0;
       padding: 3px;
     }
   }

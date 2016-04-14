@@ -5,7 +5,7 @@ actions: {
   saveEvent(params){
     var newEvent = this.store.createRecord('event', params);
     newEvent.save();
-    this.transitionTo('index');
+    this.transitionTo('all-events');
   }
 }
 });
