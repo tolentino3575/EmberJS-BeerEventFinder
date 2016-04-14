@@ -1,4 +1,13 @@
-<h1>{{event.name}}</h1>
-<h2>{{format-date event}}</h2>
-<p>{{event.description}}</p>
-<p>{{event.author}}</p>
+<div class="item-header"><h1>{{event.name}}</h1>
+</div>
+<table>
+  <tbody>
+    <tr>
+      <td class="item-date"><h2>{{format-date event}}</h2></td>
+      <td class="item-info">
+        <p>{{event.description}}</p>
+        <p>{{event.author}}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>

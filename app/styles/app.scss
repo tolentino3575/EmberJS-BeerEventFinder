@@ -1,0 +1,124 @@
+// Variables
+$primary-color: #191919;
+$bronze: #594d46;
+
+$medium-breakpoint: 720px;
+
+// Mixins
+
+@mixin item-border {
+  border: 2px solid $primary-color;
+}
+
+// Base Styles
+body {
+  font-family: 'Roboto Mono';
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+  &:hover {
+    text-decoration: none;
+    color: $bronze;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  tr {
+    width: 100%;
+  }
+}
+
+// Layout & Containers
+
+// Navbar
+.navLinks {
+  padding-bottom: 3em;
+  margin-top: -2em;
+  float: right;
+  padding-right: 1em;
+  font-weight: bold;
+}
+
+// Header and Hero styling
+.logo-main {
+  width: 200px;
+}
+
+// Footer
+.page-footer {
+  position: fixed;
+  text-align: center;
+  font-weight: 200;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+}
+
+// Event items
+
+.events-list {
+
+}
+
+.events-list li {
+  margin: 20px 0;
+  @include item-border;
+  .item-header {
+    text-transform: capitalize;
+    text-align: center;
+    border-bottom: 2px solid $primary-color;
+    h1 {
+      margin: 5px;
+      padding: 3px;
+    }
+  }
+  .item-date {
+    width: 40%;
+    min-width: 118px;
+    height: 100%;
+    margin: 0;
+    padding: 5px;
+    border-right: 1px solid $primary-color;
+    @media screen and (min-width: $medium-breakpoint) {
+      width: 30%;
+      padding: 5px;
+    }
+  }
+  .item-info {
+    margin: 0;
+    padding: 15px;
+    width: 60%;
+    text-align: left;
+    @media screen and (min-width: $medium-breakpoint) {
+      width: 70%;
+      padding: 5px;
+    }
+  }
+}
+
+// Page specific styles
+
+// Admin Page
+.adminImageDisplay {
+  height: 200px;
+  width: 200px;
+}
+
+// About Page
+
+.aboutPhotos {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
