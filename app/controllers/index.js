@@ -10,12 +10,13 @@ export default Ember.Controller.extend({
         password: this.get('password') || '',
       }, (error, data) => {
         if (error) {
+          alert(error);
           console.log(error);
         } else {
           controller.set('email', null);
           controller.set('password', null);
           alert('Successfully Signed-Up, Sign-In to start session!');
-        };
+        }
       });
     },
 
@@ -30,6 +31,7 @@ export default Ember.Controller.extend({
         controller.set('signInPassword', null);
         controller.transitionToRoute('home');
       }, (error) => {
+        alert(error);
         console.log(error);
       });
     }
