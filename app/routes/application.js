@@ -10,6 +10,6 @@ export default Ember.Route.extend({
     accessDenied(){
       this.transitionTo('/');
       alert('ACCESS DENIED, PLEASE SIGN-IN TO SEE THIS PAGE');
-    }
+    },
   }
 });
