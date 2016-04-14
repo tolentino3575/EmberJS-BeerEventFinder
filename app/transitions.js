@@ -88,5 +88,35 @@ export default function(){
     this.toRoute('all-events'),
     this.use('toRight'),
     this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('home'),
+    this.toRoute('newevent'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('home'),
+    this.toRoute('about'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('home'),
+    this.toRoute('bookmarkedevents'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('home'),
+    this.toRoute('all-events'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  ),
+  this.transition(
+    this.fromRoute('home'),
+    this.toRoute('admin'),
+    this.use('toRight'),
+    this.reverse('toLeft')
   );
 }
