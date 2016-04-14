@@ -10,7 +10,13 @@ export default Ember.Component.extend({
       description: this.get('description'),
       image: this.get('image')
       };
-      if((params.name === undefined) || (params.date === undefined) || (params.address === undefined) || (params.description === undefined) || (params.image === undefined)) {
+      if(
+        (params.name === undefined) ||
+        (params.date === undefined) ||
+        (params.address === undefined) ||
+        (params.description === undefined) ||
+        (params.image === undefined)
+      ) {
         alert("Please fill out all the fields!");
       } else {
         this.sendAction('saveEvent', params);

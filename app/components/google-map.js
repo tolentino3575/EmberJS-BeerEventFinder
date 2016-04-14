@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   map: Ember.inject.service('google-map'),
   init: function() {
     this._super();
-    Ember.run.schedule("afterRender",this,function() {
+    Ember.run.schedule("afterRender", this, function() {
       this.send("showMap");
     });
   },
