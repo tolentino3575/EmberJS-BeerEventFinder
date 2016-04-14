@@ -1,5 +1,5 @@
 <ul class="events-list">
   {{#each sortedEvents as |event|}}
-    <li>{{#link-to 'event' event.id}}{{event-tile event=event}}{{/link-to}}</li>
+    <li>{{event-tile event=event}}</li>
   {{/each}}
 </ul>
