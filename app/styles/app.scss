@@ -40,7 +40,8 @@ a {
 
 table {
   // border-collapse: collapse;
-  // border-spacing: 0;
+  border-collapse:separate;
+  border-spacing: 0;
   width: 100%;
   tr {
     width: 100%;
@@ -148,7 +149,7 @@ button {
     height: 100%;
     margin: 0;
     padding: 5px;
-    border-right: 1px solid $primary-color;
+    // border-left: 1px solid $primary-color;
     position: relative;
     text-align: center;
     @media screen and (min-width: $medium-breakpoint) {
@@ -198,6 +199,7 @@ button {
     padding: 15px;
     width: 60%;
     text-align: left;
+    border-left: 1px solid $primary-color;
     @media screen and (min-width: $medium-breakpoint) {
       width: 75%;
       padding: 10px;
@@ -206,15 +208,25 @@ button {
 }
 
 .hover-view {
-  display: none;
+  // display: none;
+  opacity: 0;
+  position: relative;
+  top: -80px;
+  height: 0;
+  overflow: hidden;
 }
 
 .item-header:hover .hover-view {
-  display: inline-block;
+  // display: inline-block;
+  opacity: 1;
+  position: relative;
+  overflow: visible;
+  top: -75px;
 }
 
 .item-header:hover .header-title {
-  display: none;
+  // display: none;
+    opacity: 0;
 }
 
 .eventDescription{
