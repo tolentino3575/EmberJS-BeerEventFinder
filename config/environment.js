@@ -2,6 +2,11 @@
 
 module.exports = function(environment) {
   var ENV = {
+    ['g-map']: {
+      libraries: ['places', 'geometry'],
+      // key: 'your-unique-google-map-api-key',
+      protocol: 'https'
+    },
     modulePrefix: 'brewery-list',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
@@ -15,7 +20,6 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
-
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

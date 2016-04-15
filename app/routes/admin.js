@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   beforeModel(transition) {
-    var password = "test";
+    var password = "epicodus";
     var userInputArea = "";
     var userInputtedPassword = prompt("Enter the password to access the Admin page:", userInputArea);
 
