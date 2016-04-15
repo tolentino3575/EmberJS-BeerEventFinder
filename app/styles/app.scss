@@ -201,11 +201,11 @@ button {
   display: none;
 }
 
-li:hover .hover-view {
+.item-header:hover .hover-view {
   display: inline-block;
 }
 
-li:hover .header-title {
+.item-header:hover .header-title {
   display: none;
 }
 
@@ -227,5 +227,4 @@ li:hover .header-title {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-}
 }
