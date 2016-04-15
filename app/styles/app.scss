@@ -102,11 +102,12 @@ button {
 }
 
 .breadcrumb{
-  background-color: #eee;
+  background-color: white;
 }
 
 .signOutBtn {
   cursor: pointer;
+  color: black;
 }
 
 // Header and Hero styling
@@ -234,4 +235,8 @@ button {
   height: 200px;
   width: 200px;
   border-radius: 50%;
+}
+
+.jumbotronText {
+  color: white;
 }
