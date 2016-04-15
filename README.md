@@ -1,4 +1,4 @@
-# _Brewery-List_
+# Beer Event Finder
 
 #### An interactive site about brew-related events  | April 15, 2016
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-JavaScript Ember Group Project: Brew Events App. This application serves as a platform.......
+JavaScript Ember Group Project: This application serves as a platform for beer lovers far and wide to view events local to Portland. Account users are given the ability to add events to the list and bookmark events they wish to attend. Admin has the ability to edit and delete events. Non-account users can view events and leave comments.
 
 ## Prerequisites
 
@@ -21,12 +21,9 @@ You will need the following things properly installed on your computer:
 
 1. Open Terminal and clone into this repository: https://github.com/yvonnapc/brewery-list.git
 2. Within the home directory, run:<br>
-       ```$ brew install node ```<br>
        ```$ npm install ```<br>
        ```$ npm install -g bower ```<br>
        ```$ bower install ```<br>
-       ```$ ember install emberfire ```<br>
-       ```$ ember install ember-remodal ```<br>
        ```$ ember s ```<br>
 3. Your browser will automatically navigate to the app at: http://localhost:4200
 
@@ -36,7 +33,7 @@ N/A
 
 ## Support and Contact Details
 
-If you have any issues, questions, ideas, or concerns contact us through GitHub. If you would like to make a contribution to the code, feel free to do so and notify me by e-mail.
+If you have any issues, questions, ideas, or concerns please contact us through GitHub. Links to our GitHub profiles can be found through our LinkedIn, which you can find on the 'About' page.  If you would like to make a contribution to the code, feel free to do so and notify a group member by e-mail.
 
 ## Technologies Used
 
@@ -44,14 +41,15 @@ If you have any issues, questions, ideas, or concerns contact us through GitHub.
 * Remodal
 * Ember
 * JavaScript
-* Component
 * Bootstrap
 * GIT
 * NPM
 * Node
 * Bower
-* Gulp
-* SCSS
+* Sass / SCSS
+* Materialize
+* Google Maps API
+* Firebase
 
 ## License
 
