@@ -1,5 +1,5 @@
 import Ember from 'ember';
-const { $, run, computed } = Ember;
+const { $, run } = Ember;
 
 export default Ember.Component.extend({
   classNames:['sticky-header-container'],
