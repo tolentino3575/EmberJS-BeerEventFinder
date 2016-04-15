@@ -1,2 +1,45 @@
-{{google-map}}
+<!-- GOOGLE MAP -->
+{{#g-map lat=45.5231 lng=-122.6765 zoom=12 as |context|}}
+  <!-- MARKERS -->
+  {{#g-map-marker context lat=45.52077 lng=-122.67744 as |markerContext|}}
+    {{#g-map-infowindow markerContext openOn="mouseover" closeOn="mouseout"}}
+      <h4>Drunk Coding</h4>
+      <h6>April 20th, 2016</h6>
+      <p>Grab a few brews, make a few git commits, and come up with the next big app.</p>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
+
+  {{#g-map-marker context lat=45.5482098 lng=-122.6144725 as |markerContext|}}
+    {{#g-map-infowindow markerContext openOn="mouseover" closeOn="mouseout"}}
+      <h4>Alameda Brewhouse</h4>
+      <h6>April 16th, 2016</h6>
+      <p>$5 Growler fills!</p>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
+
+  {{#g-map-marker context lat=45.517789 lng=-122.6616077 as |markerContext|}}
+    {{#g-map-infowindow markerContext openOn="mouseover" closeOn="mouseout"}}
+      <h4>Loyal Legion Pub</h4>
+      <h6>April 21th, 2016</h6>
+      <p>Gear Up IPA Release Party! Come enjoy a delcious IPA with us!</p>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
+
+  {{#g-map-marker context lat=45.5473539 lng=-122.6773179 as |markerContext|}}
+    {{#g-map-infowindow markerContext openOn="mouseover" closeOn="mouseout"}}
+      <h4>Ecliptic Brewing</h4>
+      <h6>April 27th, 2016</h6>
+      <p>Callisto Tripple(blackcurrants) beer release!</p>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
+
+  {{#g-map-marker context lat=45.541735 lng=-122.7223462 as |markerContext|}}
+    {{#g-map-infowindow markerContext openOn="mouseover" closeOn="mouseout"}}
+      <h4>Portland Brewing</h4>
+      <h6>April 20th, 2016</h6>
+      <p>$10 Burger and pint!</p>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
+{{/g-map}}
+
 {{event-sort event=model}}
